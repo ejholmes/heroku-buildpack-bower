@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+BUILD_DIR=$1
+CACHE_DIR=$2
+
+cd $BUILD_DIR
+
+PATH="$BUILD_DIR/bin:$BUILD_DIR/node_modules/.bin:$PATH" bower install
