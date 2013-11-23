@@ -5,4 +5,4 @@ CACHE_DIR=$2
 
 cd $BUILD_DIR
 
-PATH="$BUILD_DIR/bin:$BUILD_DIR/node_modules/.bin:$PATH" bower install
+PATH="$BUILD_DIR/bin:$BUILD_DIR/node_modules/.bin:$PATH" bower install --config.storage.packages=vendor/bower/packages --config.storage.registry=vendor/bower/registry --config.tmp=vendor/bower/tmp
